@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <form id="form1" action="/Home/GetResult" method="post">
+        Enter the Value of a:
+        <input type="text" id="txtNum1" name="txtNum1" />
+        <br />
+        Enter the Value of b:
+        <input type="text" id="txtNum2" name="txtNum2" />
+        <br />
+        Select Function:
+        <input type="radio" name="chkSelect" value="1" />Add &nbsp;&nbsp;
+        <input type="radio" name="chkSelect" value="2" />Subtract
+        <br />
+        <input type="submit" name="btnSubmit" value="GetResult" />
+        <br />
+        @ViewBag.Result
+    </form>
+</div>
